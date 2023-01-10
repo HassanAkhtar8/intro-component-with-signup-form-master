@@ -1,0 +1,215 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+  font-weight: 300;
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+p {
+  margin-top: 0;
+  line-height: 1.1;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins,sans-serif ";
+  box-sizing: border-box;
+  display: grid;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/images/bg-intro-mobile.png"), linear-gradient(hsl(0deg, 100%, 74%), hsl(0deg, 100%, 74%));
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  text-align: center;
+  padding: 1rem;
+}
+
+.insav {
+  position: absolute;
+  top: 0.1rem;
+  right: 0.3rem;
+  visibility: hidden;
+}
+
+.in1 {
+  position: relative;
+}
+
+.in2 {
+  position: relative;
+}
+
+.in3 {
+  position: relative;
+}
+
+.in4 {
+  position: relative;
+}
+
+.para {
+  font-size: 0.8rem;
+  position: absolute;
+  top: 1.9rem;
+  right: 0;
+  color: hsl(0deg, 100%, 74%);
+}
+
+.up p {
+  color: rgb(219, 217, 217);
+  margin-bottom: 2rem;
+  line-height: 1.3rem;
+}
+.up h1 {
+  font-family: "Poppins,sans-serif ";
+  line-height: 1.5rem;
+  font-weight: 900;
+  color: white;
+  margin-top: 1.8rem;
+  margin-bottom: 1.2rem;
+}
+
+.price {
+  background-color: hsl(248deg, 32%, 49%);
+  border-radius: 0.3rem;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.price p {
+  padding: 0.5rem;
+}
+.price p b {
+  color: white;
+}
+
+.blok {
+  border-radius: 0.3rem;
+  display: block;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  border: 1px solid rgb(231, 225, 225);
+  color: hsl(249deg, 10%, 26%);
+}
+
+button {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 0.3rem;
+  border: none;
+  background-color: hsl(154deg, 59%, 51%);
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgba(56, 204, 140, 0.5);
+}
+
+button:active {
+  background-color: hsl(154deg, 59%, 51%);
+}
+
+fieldset {
+  border: none;
+  padding: 0.5rem;
+}
+
+.field {
+  background-color: white;
+  padding: 0.3rem;
+  border-radius: 0.4rem;
+}
+
+footer p {
+  color: rgb(185, 182, 182);
+  font-size: 0.7rem;
+  margin-bottom: 0.4rem;
+}
+footer p b {
+  color: hsl(0deg, 100%, 74%);
+}
+
+.invis {
+  visibility: visible;
+}
+
+.inbor {
+  border: 2px solid hsl(0deg, 100%, 74%);
+}
+
+.visi {
+  display: none;
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    background-image: url("/images/bg-intro-desktop.png"), linear-gradient(hsl(0deg, 100%, 74%), hsl(0deg, 100%, 74%));
+  }
+  main {
+    flex-direction: row;
+    padding: 3rem;
+  }
+  .visi {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  .visi p {
+    color: rgb(236, 230, 230);
+    font-size: smaller;
+    padding: 0.5rem;
+  }
+  .hidi {
+    display: none;
+  }
+  .up {
+    margin-top: 1.8rem;
+    width: 50%;
+    padding: 2rem;
+  }
+  .up h1 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+  .up p {
+    font-size: smaller;
+  }
+  .blok {
+    margin-bottom: 1.3rem;
+  }
+  .down {
+    width: 50%;
+  }
+  .down footer p {
+    padding-left: 0.4rem;
+    padding-right: 0.2rem;
+  }
+}/*# sourceMappingURL=input.css.map */

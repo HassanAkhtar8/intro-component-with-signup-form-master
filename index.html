@@ -2,41 +2,93 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Intro component with sign up form</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=League+Spartan:wght@700&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="dist/input.css">
 </head>
 <body>
+<main>
+        <div class="up">
+            <h1>Learn to code by<br> watching others</h1>
+            <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+              but understanding how developers think is invaluable.</p>
+            <div class="price hidi">
+              <p><b>Try it free 7 days</b> then<br>$20/mo. thereafter</p>
+            </div>
+        </div>
 
-  Learn to code by watching others
 
-  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-  but understanding how developers think is invaluable. 
+        <div class="down">
+          <div class="price visi">
+            <p><b>Try it free 7 days</b> then $20/mo. thereafter</p>
+          </div>
 
-  Try it free 7 days then $20/mo. thereafter
+          <div class="field">
+            <fieldset>
+              <div class="in1 in">
+                <input class="blok" placeholder="First Name" type="text" name="firstName" id="firstName">
+                <p class="firstName para"></p>
+                <svg class="insav firstN" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                  <g fill="none" fill-rule="evenodd">
+                    <circle fill="#FF7979" cx="12" cy="12" r="12" />
+                    <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
+                    <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
+                  </g>
+                </svg>
+              </div>
 
-  First Name 
-  Last Name 
-  Email Address
-  Password
+              <div class="in2 in">
+                <input class="blok" placeholder="Last Name" type="text" name="lastName" id="lastName">
+                <p class="lastName para"></p>
+                <svg class="insav lastN" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                  <g fill="none" fill-rule="evenodd">
+                    <circle fill="#FF7979" cx="12" cy="12" r="12" />
+                    <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
+                    <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
+                  </g>
+                </svg>
+              </div>
 
-  Claim your free trial 
+              <div class="in3 in">
+                <input class="blok" placeholder="Email Address" type="email" name="email" id="email">
+                <p class="email para"></p>
+                <svg class="insav svemail" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                  <g fill="none" fill-rule="evenodd">
+                    <circle fill="#FF7979" cx="12" cy="12" r="12" />
+                    <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
+                    <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
+                  </g>
+                </svg>
+              </div>
 
-  By clicking the button, you are agreeing to our Terms and Services
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+              <div class="in4 in">
+                <input class="blok" placeholder="Password" type="password" name="password" id="password">
+                <p class="password para"></p>
+                <svg class="insav svpass" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                  <g fill="none" fill-rule="evenodd">
+                    <circle fill="#FF7979" cx="12" cy="12" r="12" />
+                    <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
+                    <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
+                  </g>
+                </svg>
+              </div>
+
+              <button id="trial">CLAIM YOUR FREE TRIAL</button>
+            </fieldset>
+            
+            <footer>
+              <p>By clicking the button, you are agreeing to our <b>Terms and Services</b></p>
+            </footer>
+          </div>
+        </div>
+
+</main>
+<script src="app.js"></script>
 </body>
 </html>

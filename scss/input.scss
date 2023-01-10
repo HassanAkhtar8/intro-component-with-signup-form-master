@@ -1,0 +1,177 @@
+@forward 'global';
+@use "util" as u;
+body{
+    font-family: u.$font3;
+    box-sizing: border-box;
+    display: grid;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/images/bg-intro-mobile.png"), linear-gradient(u.$red, u.$red);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    text-align: center;
+    padding: 1rem;
+}
+.insav{
+    position: absolute;
+    top: 0.1rem;
+    right: 0.3rem;
+    visibility: hidden;
+}
+.in1{
+    position: relative;
+
+}
+.in2{
+    position: relative;
+
+}
+.in3 {
+    position: relative;
+
+}
+.in4 {
+    position: relative;
+
+}
+.para{
+    font-size: 0.8rem;
+    position: absolute;
+    top: 1.9rem;
+    right: 0;
+    color: u.$red;
+}
+.up{
+    p{
+        color: rgb(219, 217, 217);
+        margin-bottom: 2rem;
+        line-height: 1.3rem;
+    }
+        h1 {
+            font-family: u.$font3;
+            line-height: 1.5rem;
+            font-weight: 900;
+            color: white;
+            margin-top: 1.8rem;
+            margin-bottom: 1.2rem;
+        }
+}
+.price {
+    p {
+        b {
+            color: white;
+        }
+        padding: 0.5rem;
+    }
+    background-color: u.$blue;
+    border-radius: 0.3rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.blok {
+    border-radius: 0.3rem;
+    display: block;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    border: 1px solid rgb(231, 225, 225);
+    color: u.$darkBlue;
+}
+button{
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 0.3rem;
+    border: none;
+    background-color: u.$green;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+button:hover{
+    background-color: u.$greenO;
+}
+button:active{
+    background-color: u.$green;
+}
+fieldset{
+    border: none;
+    padding: 0.5rem;
+    
+}
+.field{
+    background-color: white;
+    padding: 0.3rem;
+    border-radius: 0.4rem;
+}
+footer{
+    p{
+        color: rgb(185, 182, 182);
+        font-size: 0.7rem;
+        b{
+            color: u.$red;
+        }
+        margin-bottom: 0.4rem;
+    }
+}
+.invis{
+    visibility: visible;
+}
+.inbor{
+    border: 2px solid u.$red;
+}
+.visi{
+    display: none;
+}
+@media  screen and (min-width: 700px) {
+    body{
+        background-image: url("/images/bg-intro-desktop.png"), linear-gradient(u.$red, u.$red);
+    }
+    main{
+        flex-direction:row;
+        padding: 3rem;
+    }
+    .visi{ 
+        display: block;
+        width: 100%;
+        p{
+            color: rgb(236, 230, 230);
+            font-size: smaller;
+            padding: 0.5rem;
+        }
+        margin-bottom: 0.5rem;
+    }
+    .hidi{
+        display: none;
+    }
+    .up{
+        h1{
+            font-size: 1.5rem;
+            line-height: 1.8rem;
+        }
+        margin-top: 1.8rem;
+        width: 50%;
+        padding: 2rem;
+        p{
+            font-size: smaller;
+        }
+    }
+    .blok{
+        margin-bottom: 1.3rem;
+    }
+    .down{
+        width: 50%;
+        footer{
+            p{
+                padding-left: 0.4rem;
+                padding-right: 0.2rem;
+            }
+        }
+    }
+}
